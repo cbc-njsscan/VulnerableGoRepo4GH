@@ -38,7 +38,7 @@ func RenderAsJson(w http.ResponseWriter, data ...interface{}) {
 func UnSafeRender(w http.ResponseWriter, name string, data ...interface{}) {
 
 	template := template.Must(template.ParseGlob("templates/*"))
-	template.ExecuteTemplate(w, name, data)
+
 }
 
 func ToHTML(text string) template.HTML {
